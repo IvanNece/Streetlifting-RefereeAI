@@ -9,11 +9,11 @@ AI-powered tool to analyze parallel bar Dips and determine lift validity based o
 ## 📸 Examples
 
 ### ✅ VALID Dip
-![Valid](output/dip_1/debug_landmarks.jpg)
+![Valid](assets/image1.jpg)
 *D (Green) touches/passes below E (Blue) line **VALID (+10.0px margin)***
 
 ### ❌ INVALID Dip
-![Invalid](output/dip_2/debug_landmarks.jpg)
+![Invalid](assets/image2.jpg)
 *D fails to reach E line **INVALID (−2.3px margin)***
 
 ---
