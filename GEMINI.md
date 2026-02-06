@@ -1,53 +1,45 @@
-# GEMINI.md — Agent Operating Rules
-
-You are working in a new repository. You must follow this document.
+# GEMINI.md — Agent Operating Rules (High-Precision Dip Validator)
 
 ## 0) Mission
-Implement a Dip validity checker from raw side-view smartphone video.
+Implementare una pipeline CV/ML con alta precisione per giudicare la profondita del Dip da video smartphone.
 
-Default model/tool: Gemini (fast/cheap).
-Use Claude Opus ONLY if:
-- the system is stuck after two concrete attempts to fix a bug, or
-- a design decision is ambiguous and requires deep reasoning.
+Modello di default per implementazione: Gemini (costi/velocita).
+Claude Opus 4.5:
+- usalo per planning, architettura, scelte difficili, oppure debugging duro dopo 2 tentativi falliti.
 
 ## 1) Non-negotiables
-- Do not claim “done” unless you ran the Quality Gates.
-- Keep changes small and reviewable (one task per branch).
-- Do not add heavy dependencies without proposing at least one lighter alternative.
-- Always update docs when behavior changes (SPEC/ARCHITECTURE).
+- Non dichiarare “done” senza aver eseguito i Quality Gates.
+- Cambi piccoli e reviewabili: una tranche per volta.
+- Nessun refactor creativo fuori scope.
+- Nessuna dipendenza pesante senza motivazione e alternativa.
 
-## 2) Technical constraints
-- Prefer Python for v1 (fast prototyping, CV ecosystem).
-- Modular design:
-  - pose backend as an interchangeable module
-  - rule evaluation as pure functions
-  - pipeline separated from UI/output
-- The video is raw (phone). Handle rotation metadata if needed.
+## 2) Core constraints
+- NO MediaPipe.
+- SI MMPose/RTMPose (OpenMMLab) per pose di base.
+- Devi gestire video “raw” da telefono (rotazione possibile).
+- Deve funzionare anche a ~45 gradi con warnings quando l’affidabilita scende.
 
-## 3) Required deliverables in v1
-- CLI command that:
-  - reads input video from input_videos/
-  - produces output report JSON
-  - produces overlay mp4 in output/
-  - prints VALID/INVALID + bottom_frame_index + margin
+## 3) Landmark reality check (fondamentale)
+Non assumere che 133 keypoints includano il deltoide posteriore:
+- COCO-WholeBody 133 keypoints = body + feet + face + hands.
+Per ottenere posterior deltoid apex e elbow tip serve un modulo dedicato (landmark refinement).
 
-- Overlay must show:
-  - selected side (left/right)
-  - shoulder and elbow markers
-  - a horizontal line at elbow y
-  - margin numeric value
-  - phase label (top/descending/bottom/ascending) per frame
+## 4) Required deliverables (v1)
+- CLI che legge input_videos/<video> e produce in output/:
+  - overlay mp4 con fasi + punti/linee + decisione
+  - report JSON con valid/invalid, bottom_frame_index, margin_px, selected_side, warnings
+- Algoritmo:
+  - coarse pose (RTMPose) + refinement (D ed E)
+  - bottom detection con smoothing
+  - decision su bottom window (worst margin)
 
-## 4) Quality Gates (must run before “done”)
-- Install dependencies
-- Run unit tests
-- Run the pipeline on at least one example video and generate outputs
+## 5) Quality Gates
+- install deps
+- unit tests
+- run E2E su almeno un video e generare overlay + JSON
 
-If any gate fails, fix it.
-
-## 5) Output expectations for each task
-For each completed task, provide:
-- What changed (short)
-- Commands to run (exact)
-- Files touched
-- Known limitations + next steps
+## 6) Output expectations per tranche
+- cosa e cambiato
+- comandi esatti per verificare
+- files toccati
+- limiti noti + next step

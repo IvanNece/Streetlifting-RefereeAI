@@ -1,0 +1,27 @@
+# configs/default.yaml
+# Pose estimation
+pose:
+  model: "rtmpose-m"         # Model variant
+  device: "cpu"              # cpu or cuda
+  confidence_threshold: 0.3  # Min confidence for keypoint
+
+# Phase detection
+phases:
+  smoothing_window: 15       # Savitzky-Golay window size
+  smoothing_polyorder: 2     # Savitzky-Golay polynomial order
+  bottom_window: 5           # +/- frames around detected bottom
+
+# Landmark refinement
+landmarks:
+  elbow_offset_ratio: 0.18   # E offset as % of upper arm length
+  deltoid_offset_ratio: 0.22 # D offset as % of upper arm length
+  ema_alpha: 0.4             # Temporal smoothing factor
+
+# Decision
+decision:
+  min_confidence: 0.3        # Warn if avg confidence below this
+
+# Output
+output:
+  save_landmarks_trace: true  # Include per-frame data in JSON
+  overlay_show_margin: true   # Show margin value on overlay

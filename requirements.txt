@@ -1,0 +1,6 @@
+rtmlib>=0.0.14
+opencv-python>=4.8.0
+numpy>=1.24.0
+scipy>=1.10.0
+pyyaml>=6.0
+pytest>=7.0.0
