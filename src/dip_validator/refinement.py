@@ -98,7 +98,6 @@ def detect_angle_warning(pose: PoseResult) -> bool:
     return (shoulder_width / torso_height) < 0.5
 
 def refine_landmarks(
-    frame: np.ndarray, 
     pose: Optional[PoseResult], 
     side: str, 
     elbow_offset_ratio: float = 0.18, 

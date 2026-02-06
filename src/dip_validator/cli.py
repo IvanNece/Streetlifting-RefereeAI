@@ -153,9 +153,9 @@ def main():
             "elbow_offset_ratio": config['landmarks']['elbow_offset_ratio'],
             "deltoid_offset_ratio": config['landmarks']['deltoid_offset_ratio']
         }
-        for i, (f, r) in enumerate(zip(frames, results)):
-            raw_l.append(refine_landmarks(f, r, "left", **ref_params))
-            raw_r.append(refine_landmarks(f, r, "right", **ref_params))
+        for i, r in enumerate(results):
+            raw_l.append(refine_landmarks(r, "left", **ref_params))
+            raw_r.append(refine_landmarks(r, "right", **ref_params))
         
         left_refined = smooth_landmarks_temporal(raw_l, alpha=config['landmarks']['ema_alpha'])
         right_refined = smooth_landmarks_temporal(raw_r, alpha=config['landmarks']['ema_alpha'])

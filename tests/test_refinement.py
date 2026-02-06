@@ -11,8 +11,7 @@ from dip_validator.refinement import (
 from dip_validator.pose import PoseResult
 
 def test_estimate_functions_fallback():
-    # Test that functions return offset points even without contour
-    frame = np.zeros((100, 100, 3), dtype=np.uint8)
+    # Test that functions return offset points based on geometry
     
     # Mock pose: vertical upper arm, slanted forearm
     kp = np.zeros((17, 2))
@@ -21,20 +20,18 @@ def test_estimate_functions_fallback():
     kp[9] = [0, 50]  # L_WRIST (forearm pointing left)
     pose = PoseResult(keypoints=kp, confidences=np.ones(17), bbox=(0,0,100,100))
     
-    roi_offset = (0, 0)
-    
-    # Test elbow fallback
+    # Test elbow tip estimation
     # Forearm is [0, 50] - [20, 50] = [-20, 0]
     # Posterior dir is [1, 0]
     # E = [20, 50] + [1, 0] * (30 * 0.18) = [20 + 5.4, 50] = [25.4, 50.0]
-    e_pt, e_conf = estimate_elbow_tip(pose, None, "left", roi_offset)
+    e_pt, e_conf = estimate_elbow_tip(pose, "left")
     assert e_pt[0] == pytest.approx(25.4)
     assert e_pt[1] == pytest.approx(50.0)
     
-    # Test deltoid fallback
+    # Test deltoid apex estimation
     # Posterior dir is [1, 0]
     # D = [20, 20] + [1, 0] * (30 * 0.22) = [20 + 6.6, 20] = [26.6, 20.0]
-    d_pt, d_conf = estimate_deltoid_apex(pose, None, "left", roi_offset)
+    d_pt, d_conf = estimate_deltoid_apex(pose, "left")
     assert d_pt[0] == pytest.approx(26.6)
     assert d_pt[1] == pytest.approx(20.0)
 
