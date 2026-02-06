@@ -1,0 +1,1584 @@
+{
+  "video": "dip_1.mp4",
+  "result": "VALID",
+  "margin_px": 10.0,
+  "best_margin_px": 10.0,
+  "selected_side": "left",
+  "bottom_frame_index": 82,
+  "confidence": 0.85,
+  "warnings": [
+    "angle_warning"
+  ],
+  "frames_analyzed": 112,
+  "fps": 30.0,
+  "landmarks_trace": [
+    {
+      "frame": 0,
+      "deltoid": [
+        727.11,
+        186.83
+      ],
+      "elbow": [
+        739.92,
+        266.9
+      ],
+      "margin_px": -80.06,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 1,
+      "deltoid": [
+        727.14,
+        186.97
+      ],
+      "elbow": [
+        739.92,
+        266.84
+      ],
+      "margin_px": -79.87,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 2,
+      "deltoid": [
+        726.46,
+        186.52
+      ],
+      "elbow": [
+        739.77,
+        267.13
+      ],
+      "margin_px": -80.6,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 3,
+      "deltoid": [
+        725.34,
+        186.36
+      ],
+      "elbow": [
+        739.57,
+        266.8
+      ],
+      "margin_px": -80.44,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 4,
+      "deltoid": [
+        724.7,
+        185.74
+      ],
+      "elbow": [
+        738.91,
+        266.09
+      ],
+      "margin_px": -80.35,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 5,
+      "deltoid": [
+        723.86,
+        185.87
+      ],
+      "elbow": [
+        738.62,
+        266.1
+      ],
+      "margin_px": -80.23,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 6,
+      "deltoid": [
+        723.03,
+        186.18
+      ],
+      "elbow": [
+        737.52,
+        265.7
+      ],
+      "margin_px": -79.52,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 7,
+      "deltoid": [
+        722.07,
+        184.41
+      ],
+      "elbow": [
+        736.41,
+        264.73
+      ],
+      "margin_px": -80.33,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 8,
+      "deltoid": [
+        720.57,
+        183.99
+      ],
+      "elbow": [
+        735.39,
+        264.16
+      ],
+      "margin_px": -80.17,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 9,
+      "deltoid": [
+        719.47,
+        183.86
+      ],
+      "elbow": [
+        734.58,
+        264.03
+      ],
+      "margin_px": -80.17,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 10,
+      "deltoid": [
+        718.34,
+        184.16
+      ],
+      "elbow": [
+        733.63,
+        264.37
+      ],
+      "margin_px": -80.21,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 11,
+      "deltoid": [
+        716.63,
+        185.17
+      ],
+      "elbow": [
+        732.62,
+        264.26
+      ],
+      "margin_px": -79.09,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 12,
+      "deltoid": [
+        714.98,
+        185.41
+      ],
+      "elbow": [
+        730.79,
+        263.83
+      ],
+      "margin_px": -78.42,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 13,
+      "deltoid": [
+        712.73,
+        186.2
+      ],
+      "elbow": [
+        728.44,
+        264.29
+      ],
+      "margin_px": -78.09,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 14,
+      "deltoid": [
+        710.18,
+        186.26
+      ],
+      "elbow": [
+        726.43,
+        264.21
+      ],
+      "margin_px": -77.95,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 15,
+      "deltoid": [
+        706.68,
+        186.1
+      ],
+      "elbow": [
+        723.31,
+        264.06
+      ],
+      "margin_px": -77.97,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 16,
+      "deltoid": [
+        703.99,
+        186.56
+      ],
+      "elbow": [
+        720.23,
+        263.92
+      ],
+      "margin_px": -77.37,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 17,
+      "deltoid": [
+        701.01,
+        185.91
+      ],
+      "elbow": [
+        717.03,
+        264.31
+      ],
+      "margin_px": -78.4,
+      "deltoid_conf": 0.88,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 18,
+      "deltoid": [
+        697.77,
+        185.4
+      ],
+      "elbow": [
+        714.25,
+        265.06
+      ],
+      "margin_px": -79.66,
+      "deltoid_conf": 0.87,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 19,
+      "deltoid": [
+        694.47,
+        185.17
+      ],
+      "elbow": [
+        710.62,
+        265.54
+      ],
+      "margin_px": -80.37,
+      "deltoid_conf": 0.87,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 20,
+      "deltoid": [
+        690.68,
+        185.38
+      ],
+      "elbow": [
+        707.21,
+        265.48
+      ],
+      "margin_px": -80.1,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 21,
+      "deltoid": [
+        687.2,
+        185.89
+      ],
+      "elbow": [
+        703.94,
+        265.78
+      ],
+      "margin_px": -79.89,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 22,
+      "deltoid": [
+        683.93,
+        185.64
+      ],
+      "elbow": [
+        700.84,
+        266.16
+      ],
+      "margin_px": -80.51,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 23,
+      "deltoid": [
+        680.63,
+        185.81
+      ],
+      "elbow": [
+        697.62,
+        266.04
+      ],
+      "margin_px": -80.22,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 24,
+      "deltoid": [
+        676.94,
+        186.35
+      ],
+      "elbow": [
+        694.59,
+        266.33
+      ],
+      "margin_px": -79.98,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 25,
+      "deltoid": [
+        674.14,
+        187.36
+      ],
+      "elbow": [
+        692.12,
+        267.07
+      ],
+      "margin_px": -79.71,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 26,
+      "deltoid": [
+        671.79,
+        188.34
+      ],
+      "elbow": [
+        689.93,
+        267.86
+      ],
+      "margin_px": -79.51,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 27,
+      "deltoid": [
+        668.85,
+        188.69
+      ],
+      "elbow": [
+        687.15,
+        268.09
+      ],
+      "margin_px": -79.4,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 28,
+      "deltoid": [
+        666.78,
+        188.58
+      ],
+      "elbow": [
+        685.19,
+        268.12
+      ],
+      "margin_px": -79.54,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 29,
+      "deltoid": [
+        665.01,
+        188.33
+      ],
+      "elbow": [
+        682.89,
+        268.52
+      ],
+      "margin_px": -80.19,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 30,
+      "deltoid": [
+        663.27,
+        187.85
+      ],
+      "elbow": [
+        680.85,
+        268.5
+      ],
+      "margin_px": -80.66,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 31,
+      "deltoid": [
+        661.73,
+        187.94
+      ],
+      "elbow": [
+        679.14,
+        268.81
+      ],
+      "margin_px": -80.87,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 32,
+      "deltoid": [
+        660.89,
+        188.17
+      ],
+      "elbow": [
+        678.16,
+        268.54
+      ],
+      "margin_px": -80.37,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 33,
+      "deltoid": [
+        660.01,
+        188.47
+      ],
+      "elbow": [
+        677.21,
+        268.5
+      ],
+      "margin_px": -80.04,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 34,
+      "deltoid": [
+        659.1,
+        189.0
+      ],
+      "elbow": [
+        675.67,
+        269.49
+      ],
+      "margin_px": -80.49,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 35,
+      "deltoid": [
+        658.3,
+        189.15
+      ],
+      "elbow": [
+        675.67,
+        269.97
+      ],
+      "margin_px": -80.81,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 36,
+      "deltoid": [
+        657.64,
+        189.14
+      ],
+      "elbow": [
+        675.49,
+        270.15
+      ],
+      "margin_px": -81.01,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 37,
+      "deltoid": [
+        657.28,
+        189.54
+      ],
+      "elbow": [
+        674.79,
+        270.58
+      ],
+      "margin_px": -81.05,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 38,
+      "deltoid": [
+        657.23,
+        189.79
+      ],
+      "elbow": [
+        674.57,
+        270.89
+      ],
+      "margin_px": -81.1,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 39,
+      "deltoid": [
+        657.82,
+        189.28
+      ],
+      "elbow": [
+        675.05,
+        270.48
+      ],
+      "margin_px": -81.2,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 40,
+      "deltoid": [
+        658.08,
+        189.23
+      ],
+      "elbow": [
+        674.64,
+        269.82
+      ],
+      "margin_px": -80.59,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 41,
+      "deltoid": [
+        658.1,
+        189.38
+      ],
+      "elbow": [
+        674.24,
+        269.44
+      ],
+      "margin_px": -80.06,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 42,
+      "deltoid": [
+        658.45,
+        189.42
+      ],
+      "elbow": [
+        674.32,
+        269.28
+      ],
+      "margin_px": -79.85,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 43,
+      "deltoid": [
+        658.35,
+        188.64
+      ],
+      "elbow": [
+        674.68,
+        269.06
+      ],
+      "margin_px": -80.42,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 44,
+      "deltoid": [
+        658.46,
+        188.47
+      ],
+      "elbow": [
+        675.07,
+        269.19
+      ],
+      "margin_px": -80.71,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 45,
+      "deltoid": [
+        658.28,
+        188.63
+      ],
+      "elbow": [
+        675.63,
+        269.5
+      ],
+      "margin_px": -80.87,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 46,
+      "deltoid": [
+        658.59,
+        188.74
+      ],
+      "elbow": [
+        675.19,
+        269.7
+      ],
+      "margin_px": -80.96,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 47,
+      "deltoid": [
+        658.85,
+        188.27
+      ],
+      "elbow": [
+        675.63,
+        269.4
+      ],
+      "margin_px": -81.13,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 48,
+      "deltoid": [
+        659.23,
+        188.35
+      ],
+      "elbow": [
+        676.13,
+        268.98
+      ],
+      "margin_px": -80.63,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 49,
+      "deltoid": [
+        659.63,
+        188.87
+      ],
+      "elbow": [
+        676.62,
+        269.26
+      ],
+      "margin_px": -80.39,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 50,
+      "deltoid": [
+        659.73,
+        188.39
+      ],
+      "elbow": [
+        676.74,
+        269.04
+      ],
+      "margin_px": -80.65,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 51,
+      "deltoid": [
+        660.23,
+        188.35
+      ],
+      "elbow": [
+        677.24,
+        269.08
+      ],
+      "margin_px": -80.73,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 52,
+      "deltoid": [
+        660.23,
+        188.74
+      ],
+      "elbow": [
+        678.43,
+        268.88
+      ],
+      "margin_px": -80.14,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 53,
+      "deltoid": [
+        660.64,
+        189.58
+      ],
+      "elbow": [
+        680.09,
+        269.28
+      ],
+      "margin_px": -79.7,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 54,
+      "deltoid": [
+        660.59,
+        190.34
+      ],
+      "elbow": [
+        681.92,
+        269.61
+      ],
+      "margin_px": -79.28,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.79
+    },
+    {
+      "frame": 55,
+      "deltoid": [
+        660.71,
+        190.57
+      ],
+      "elbow": [
+        683.74,
+        270.83
+      ],
+      "margin_px": -80.27,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 56,
+      "deltoid": [
+        660.65,
+        191.99
+      ],
+      "elbow": [
+        685.85,
+        272.17
+      ],
+      "margin_px": -80.18,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.8
+    },
+    {
+      "frame": 57,
+      "deltoid": [
+        659.54,
+        193.11
+      ],
+      "elbow": [
+        687.11,
+        271.63
+      ],
+      "margin_px": -78.52,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 58,
+      "deltoid": [
+        658.49,
+        194.69
+      ],
+      "elbow": [
+        688.54,
+        271.98
+      ],
+      "margin_px": -77.29,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 59,
+      "deltoid": [
+        656.88,
+        196.33
+      ],
+      "elbow": [
+        690.7,
+        271.64
+      ],
+      "margin_px": -75.31,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.81
+    },
+    {
+      "frame": 60,
+      "deltoid": [
+        656.19,
+        199.06
+      ],
+      "elbow": [
+        693.28,
+        272.38
+      ],
+      "margin_px": -73.32,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 61,
+      "deltoid": [
+        655.25,
+        202.54
+      ],
+      "elbow": [
+        695.91,
+        272.75
+      ],
+      "margin_px": -70.21,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 62,
+      "deltoid": [
+        654.2,
+        205.79
+      ],
+      "elbow": [
+        697.43,
+        272.76
+      ],
+      "margin_px": -66.97,
+      "deltoid_conf": 0.83,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 63,
+      "deltoid": [
+        652.94,
+        209.27
+      ],
+      "elbow": [
+        698.56,
+        273.34
+      ],
+      "margin_px": -64.08,
+      "deltoid_conf": 0.83,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 64,
+      "deltoid": [
+        650.27,
+        213.14
+      ],
+      "elbow": [
+        699.11,
+        273.25
+      ],
+      "margin_px": -60.11,
+      "deltoid_conf": 0.82,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 65,
+      "deltoid": [
+        648.22,
+        217.11
+      ],
+      "elbow": [
+        700.79,
+        273.38
+      ],
+      "margin_px": -56.27,
+      "deltoid_conf": 0.83,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 66,
+      "deltoid": [
+        646.21,
+        221.39
+      ],
+      "elbow": [
+        701.76,
+        273.37
+      ],
+      "margin_px": -51.98,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.86
+    },
+    {
+      "frame": 67,
+      "deltoid": [
+        643.73,
+        226.82
+      ],
+      "elbow": [
+        701.72,
+        273.72
+      ],
+      "margin_px": -46.9,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.86
+    },
+    {
+      "frame": 68,
+      "deltoid": [
+        641.28,
+        231.37
+      ],
+      "elbow": [
+        701.9,
+        274.48
+      ],
+      "margin_px": -43.1,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 69,
+      "deltoid": [
+        639.5,
+        236.17
+      ],
+      "elbow": [
+        702.32,
+        274.13
+      ],
+      "margin_px": -37.97,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 70,
+      "deltoid": [
+        637.54,
+        240.64
+      ],
+      "elbow": [
+        702.9,
+        273.87
+      ],
+      "margin_px": -33.23,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 71,
+      "deltoid": [
+        635.58,
+        244.74
+      ],
+      "elbow": [
+        702.81,
+        274.04
+      ],
+      "margin_px": -29.3,
+      "deltoid_conf": 0.83,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 72,
+      "deltoid": [
+        633.31,
+        248.68
+      ],
+      "elbow": [
+        702.53,
+        274.06
+      ],
+      "margin_px": -25.38,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 73,
+      "deltoid": [
+        631.52,
+        252.86
+      ],
+      "elbow": [
+        702.31,
+        273.84
+      ],
+      "margin_px": -20.98,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 74,
+      "deltoid": [
+        629.27,
+        256.83
+      ],
+      "elbow": [
+        701.83,
+        274.15
+      ],
+      "margin_px": -17.32,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 75,
+      "deltoid": [
+        628.49,
+        261.49
+      ],
+      "elbow": [
+        701.46,
+        274.53
+      ],
+      "margin_px": -13.05,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 76,
+      "deltoid": [
+        627.66,
+        266.22
+      ],
+      "elbow": [
+        700.6,
+        274.72
+      ],
+      "margin_px": -8.51,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 77,
+      "deltoid": [
+        626.94,
+        270.34
+      ],
+      "elbow": [
+        699.18,
+        274.17
+      ],
+      "margin_px": -3.82,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 78,
+      "deltoid": [
+        625.86,
+        274.48
+      ],
+      "elbow": [
+        697.88,
+        273.63
+      ],
+      "margin_px": 0.86,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 79,
+      "deltoid": [
+        624.8,
+        277.78
+      ],
+      "elbow": [
+        696.54,
+        273.19
+      ],
+      "margin_px": 4.6,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 80,
+      "deltoid": [
+        623.76,
+        280.59
+      ],
+      "elbow": [
+        694.83,
+        273.27
+      ],
+      "margin_px": 7.32,
+      "deltoid_conf": 0.84,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 81,
+      "deltoid": [
+        622.92,
+        282.74
+      ],
+      "elbow": [
+        693.23,
+        273.74
+      ],
+      "margin_px": 9.0,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 82,
+      "deltoid": [
+        622.18,
+        283.65
+      ],
+      "elbow": [
+        692.02,
+        273.65
+      ],
+      "margin_px": 10.0,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.87
+    },
+    {
+      "frame": 83,
+      "deltoid": [
+        621.74,
+        282.81
+      ],
+      "elbow": [
+        691.6,
+        273.6
+      ],
+      "margin_px": 9.21,
+      "deltoid_conf": 0.87,
+      "elbow_conf": 0.86
+    },
+    {
+      "frame": 84,
+      "deltoid": [
+        620.97,
+        280.06
+      ],
+      "elbow": [
+        690.56,
+        274.65
+      ],
+      "margin_px": 5.41,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 85,
+      "deltoid": [
+        620.15,
+        276.76
+      ],
+      "elbow": [
+        690.99,
+        274.68
+      ],
+      "margin_px": 2.08,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 86,
+      "deltoid": [
+        620.69,
+        271.82
+      ],
+      "elbow": [
+        692.17,
+        274.28
+      ],
+      "margin_px": -2.46,
+      "deltoid_conf": 0.87,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 87,
+      "deltoid": [
+        622.07,
+        266.05
+      ],
+      "elbow": [
+        693.96,
+        273.91
+      ],
+      "margin_px": -7.86,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 88,
+      "deltoid": [
+        623.86,
+        260.21
+      ],
+      "elbow": [
+        695.01,
+        273.51
+      ],
+      "margin_px": -13.31,
+      "deltoid_conf": 0.88,
+      "elbow_conf": 0.86
+    },
+    {
+      "frame": 89,
+      "deltoid": [
+        625.87,
+        254.01
+      ],
+      "elbow": [
+        695.06,
+        273.43
+      ],
+      "margin_px": -19.42,
+      "deltoid_conf": 0.87,
+      "elbow_conf": 0.87
+    },
+    {
+      "frame": 90,
+      "deltoid": [
+        626.81,
+        247.84
+      ],
+      "elbow": [
+        694.75,
+        272.8
+      ],
+      "margin_px": -24.97,
+      "deltoid_conf": 0.87,
+      "elbow_conf": 0.87
+    },
+    {
+      "frame": 91,
+      "deltoid": [
+        628.57,
+        242.76
+      ],
+      "elbow": [
+        695.12,
+        272.42
+      ],
+      "margin_px": -29.65,
+      "deltoid_conf": 0.87,
+      "elbow_conf": 0.86
+    },
+    {
+      "frame": 92,
+      "deltoid": [
+        630.61,
+        238.25
+      ],
+      "elbow": [
+        695.34,
+        271.92
+      ],
+      "margin_px": -33.67,
+      "deltoid_conf": 0.85,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 93,
+      "deltoid": [
+        632.52,
+        233.25
+      ],
+      "elbow": [
+        694.77,
+        271.82
+      ],
+      "margin_px": -38.57,
+      "deltoid_conf": 0.87,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 94,
+      "deltoid": [
+        635.39,
+        228.06
+      ],
+      "elbow": [
+        694.59,
+        272.04
+      ],
+      "margin_px": -43.98,
+      "deltoid_conf": 0.87,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 95,
+      "deltoid": [
+        637.14,
+        223.88
+      ],
+      "elbow": [
+        694.07,
+        271.81
+      ],
+      "margin_px": -47.93,
+      "deltoid_conf": 0.88,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 96,
+      "deltoid": [
+        639.48,
+        219.9
+      ],
+      "elbow": [
+        693.61,
+        271.09
+      ],
+      "margin_px": -51.18,
+      "deltoid_conf": 0.86,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 97,
+      "deltoid": [
+        642.03,
+        216.23
+      ],
+      "elbow": [
+        692.8,
+        270.64
+      ],
+      "margin_px": -54.4,
+      "deltoid_conf": 0.87,
+      "elbow_conf": 0.84
+    },
+    {
+      "frame": 98,
+      "deltoid": [
+        644.34,
+        213.78
+      ],
+      "elbow": [
+        692.07,
+        270.9
+      ],
+      "margin_px": -57.11,
+      "deltoid_conf": 0.88,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 99,
+      "deltoid": [
+        647.16,
+        210.97
+      ],
+      "elbow": [
+        691.37,
+        271.07
+      ],
+      "margin_px": -60.11,
+      "deltoid_conf": 0.88,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 100,
+      "deltoid": [
+        650.29,
+        208.5
+      ],
+      "elbow": [
+        691.28,
+        272.48
+      ],
+      "margin_px": -63.98,
+      "deltoid_conf": 0.9,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 101,
+      "deltoid": [
+        652.75,
+        205.55
+      ],
+      "elbow": [
+        689.52,
+        272.64
+      ],
+      "margin_px": -67.09,
+      "deltoid_conf": 0.9,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 102,
+      "deltoid": [
+        655.22,
+        203.17
+      ],
+      "elbow": [
+        688.32,
+        272.92
+      ],
+      "margin_px": -69.75,
+      "deltoid_conf": 0.91,
+      "elbow_conf": 0.83
+    },
+    {
+      "frame": 103,
+      "deltoid": [
+        656.88,
+        200.18
+      ],
+      "elbow": [
+        687.24,
+        272.29
+      ],
+      "margin_px": -72.11,
+      "deltoid_conf": 0.9,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 104,
+      "deltoid": [
+        657.9,
+        197.68
+      ],
+      "elbow": [
+        684.91,
+        270.78
+      ],
+      "margin_px": -73.1,
+      "deltoid_conf": 0.89,
+      "elbow_conf": 0.82
+    },
+    {
+      "frame": 105,
+      "deltoid": [
+        658.91,
+        195.58
+      ],
+      "elbow": [
+        683.3,
+        269.42
+      ],
+      "margin_px": -73.83,
+      "deltoid_conf": 0.89,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 106,
+      "deltoid": [
+        659.49,
+        193.65
+      ],
+      "elbow": [
+        681.72,
+        268.6
+      ],
+      "margin_px": -74.95,
+      "deltoid_conf": 0.89,
+      "elbow_conf": 0.86
+    },
+    {
+      "frame": 107,
+      "deltoid": [
+        660.27,
+        191.73
+      ],
+      "elbow": [
+        679.34,
+        268.0
+      ],
+      "margin_px": -76.26,
+      "deltoid_conf": 0.88,
+      "elbow_conf": 0.85
+    },
+    {
+      "frame": 108,
+      "deltoid": [
+        660.68,
+        190.0
+      ],
+      "elbow": [
+        676.67,
+        267.74
+      ],
+      "margin_px": -77.74,
+      "deltoid_conf": 0.88,
+      "elbow_conf": 0.86
+    },
+    {
+      "frame": 109,
+      "deltoid": [
+        661.36,
+        188.71
+      ],
+      "elbow": [
+        674.89,
+        268.0
+      ],
+      "margin_px": -79.28,
+      "deltoid_conf": 0.88,
+      "elbow_conf": 0.86
+    },
+    {
+      "frame": 110,
+      "deltoid": [
+        661.81,
+        187.88
+      ],
+      "elbow": [
+        673.85,
+        268.11
+      ],
+      "margin_px": -80.23,
+      "deltoid_conf": 0.88,
+      "elbow_conf": 0.86
+    },
+    {
+      "frame": 111,
+      "deltoid": [
+        662.4,
+        186.68
+      ],
+      "elbow": [
+        672.94,
+        268.75
+      ],
+      "margin_px": -82.07,
+      "deltoid_conf": 0.88,
+      "elbow_conf": 0.86
+    }
+  ]
+}

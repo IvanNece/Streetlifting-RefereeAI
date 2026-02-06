@@ -149,10 +149,5 @@ cython_debug/
 # OS
 .DS_Store
 
-# Project specific
-input_videos/
-output/
-*.mp4
-*.jpg
-*.json
+# Project specific - keep logs out only
 *.log
