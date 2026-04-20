@@ -1,0 +1,12 @@
+[project]
+name = "squat-referee"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "rtmlib>=0.0.13",
+    "opencv-python-headless>=4.9",
+    "scipy>=1.13",
+]
+
+[tool.uv]
+package = false

@@ -19,7 +19,7 @@ Criteri di successo globali:
 
 ---
 
-## Fase 0 — Setup Progetto
+## Fase 0 — Setup Progetto ✅
 
 **Task 0.1** — `pyproject.toml` con dipendenze
 
@@ -43,6 +43,8 @@ dependencies = [
 Niente `models/` da gestire: rtmlib scarica i pesi automaticamente al primo avvio e li cachea in `~/.rtmlib/` (fuori dal repo).
 
 **Verifica Fase 0**: `uv sync` → nessun errore; `python -c "from rtmlib import Body"` → nessun ImportError.
+
+> ✅ **DONE** — `pyproject.toml` creato con `[tool.uv] package = false`, `.gitignore` ok, `uv sync` → 14 pacchetti installati, import verificato.
 
 ---
 

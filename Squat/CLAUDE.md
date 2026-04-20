@@ -116,10 +116,8 @@ Test **obbligatori** solo per `depth_analyzer.py` e `rep_detector.py`. Pattern A
 ## Cosa NON fare
 
 - No Clean Architecture, layer, DI — è un progettino
-- No database, API REST, ORM
 - No chiamate di rete durante il processing
 - Non sovrascrivere mai il video originale in input
-- No GUI
 
 ---
 
@@ -131,3 +129,10 @@ Input_Videos/2_Mase.mp4
 Input_Videos/3_Cerve.mp4
 Input_Videos/4_Ivan.mp4
 ```
+
+## Setup Ambiente
+
+- Venv gestito da `uv`: `uv sync` crea `.venv/` automaticamente
+- Python interpreter: `.venv/Scripts/python` (Windows)
+- `pyproject.toml` usa `[tool.uv] package = false` — progetto script, non libreria
+- Non usare `hatchling` build-backend senza configurare `packages`
