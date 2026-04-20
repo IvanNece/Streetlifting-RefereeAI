@@ -1,0 +1,80 @@
+Oggetto: Architectural Deep Dive & Project Initialization per [NOME PROGETTO]
+
+Ruolo: Agisci come un Senior Software Architect e Product Manager con 20 anni di esperienza in sistemi scalabili e moderni.
+
+Contesto: Sto per iniziare lo sviluppo di un nuovo progetto utilizzando Claude Code (CLI). Prima di iniziare la fase di coding, ho bisogno di definire l'intero ecosistema documentale che servirà da "bussola" per l'IA durante lo sviluppo.
+
+Descrizione del Progetto:
+
+"
+AI Squat Referee (IPF Standard)
+Visione del Progetto:
+Sviluppare un sistema di Computer Vision avanzato in grado di agire come un arbitro virtuale per lo squat nel powerlifting. L'obiettivo primario è determinare in modo oggettivo e automatico la validità di ogni singola ripetizione basandosi esclusivamente sui criteri tecnici ufficiali della IPF (International Powerlifting Federation).
+
+Requisiti Funzionali:
+
+Analisi Video Multidimensionale: Il software deve accettare in input file video (registrati lateralmente o in posizione diagonale/frontale) e processarli per identificare la biomeccanica dell'atleta.
+
+Rilevamento Standard IPF (La Profondità):
+
+Il sistema deve individuare con estrema precisione due punti anatomici chiave: la superficie superiore della coscia all'articolazione dell'anca (hip crease) e la parte superiore del ginocchio.
+
+Logica di Decisione: Una prova è considerata "Valida" solo se, nel punto di massima accosciata, l'articolazione dell'anca scende visibilmente al di sotto della parte superiore del ginocchio (rottura del parallelo).
+
+Elaborazione dei Frame e Tracking:
+
+Riconoscimento automatico dell'inizio e della fine della ripetizione (fase eccentrica e concentrica).
+
+Calcolo in tempo reale del differenziale spaziale tra i marker dell'anca e del ginocchio.
+
+Gestione dei casi in cui il bilanciere o i dischi oscurino parzialmente i punti di interesse (occlusion handling).
+
+Output del Programma:
+
+Video Analitico: Il software deve generare un video di output che includa:
+
+Overlay Grafici: Linee orizzontali dinamiche proiettate sui punti chiave (anca e ginocchio).
+
+Indicatore di Profondità: Un indicatore visivo che cambi stato (es. da colore neutro a colore di successo) nell'esatto istante in cui il parallelo viene superato.
+
+Giudizio Istantaneo: Un testo a video per ogni ripetizione che indichi "GOOD LIFT" o "NO LIFT".
+
+Report Finale: Un riepilogo testuale o a schermo che indichi il numero di ripetizioni totali, quelle valide e il motivo tecnico di eventuali fallimenti (es. profondità insufficiente).
+
+Sfide Architetturali richieste:
+
+Il sistema deve essere preciso al millimetro nonostante potenziali vibrazioni della camera o distorsioni prospettiche.
+
+L'analisi deve essere fluida e in grado di gestire video ad alto frame rate (60/120 fps) per catturare l'istante esatto dell'inversione di movimento.
+
+L'architettura deve essere modulare per permettere, in futuro, l'integrazione di altri criteri (es. controllo del fermo al petto nella panca piana o il blocco delle ginocchia nello stacco).
+"
+
+I tuoi Task:
+
+Web Research: Effettua una ricerca sulle migliori pratiche attuali (2026) e sulle tecnologie più stabili e performanti per questo tipo di applicazione.
+
+Output Documentale: Genera il contenuto testuale per i seguenti file in formato Markdown, pronti per essere salvati nella root del mio progetto:
+
+PRD.md (Product Requirements Document): Obiettivi, Target User, User Stories (prioritarizzate in MVP e fasi successive), e KPI di successo.
+
+TECH_STACK.md: Scelta ponderata delle tecnologie (Frontend, Backend, DB, Auth, Hosting). Spiega perché queste scelte sono le migliori per questo specifico progetto.
+
+ARCHITECTURE.md: Definizione dei pattern architettonici (es. Clean Architecture, Event-Driven), struttura delle cartelle suggerita e flusso dei dati.
+
+RULES.md: Un set di istruzioni rigorose per Claude Code. Includi standard di naming, preferenze sui test (TDD), gestione degli errori, documentazione del codice e limiti di complessità dei file.
+
+Vincoli di Output:
+
+Sii estremamente specifico e tecnico.
+
+Usa un tono professionale e pragmatico.
+
+Organizza il contenuto in blocchi di codice Markdown separati in modo che io possa copiarli facilmente.
+
+Gemini mi direbbe di usare queste tecnologie ma non sono sicuro siano le migliori (io vorrei avere massima precisione su cpu, il var deve essere preciso, ma comunque non ci deve volere molto tempo per elaborarlo dato che deve essere usato in gara):
+Componente	Scelta Consigliata	Perché?
+Video I/O	OpenCV (cv2)	Standard imbattibile per manipolare i file video.
+Pose Engine	MediaPipe Holistic o YOLOv8n-pose	Modelli "Nano" pensati per architetture non-GPU.
+Inference Runtime	ONNX Runtime o OpenVINO	Trasformano il modello IA in codice che la tua CPU legge molto più velocemente.
+Data Processing	NumPy	Per i calcoli vettoriali della profondità (calcolo del delta tra anca e ginocchio).
