@@ -48,7 +48,7 @@ Niente `models/` da gestire: rtmlib scarica i pesi automaticamente al primo avvi
 
 ---
 
-## Fase 1 — Pose Estimator (`src/pose_estimator.py`)
+## Fase 1 — Pose Estimator (`src/pose_estimator.py`) ✅
 
 **Responsabilità**: thin wrapper su `rtmlib.Body`. Dato un frame BGR, ritorna i 17 keypoint COCO dell'atleta con confidence.
 
@@ -104,7 +104,7 @@ class FramePose:
 
 ---
 
-## Fase 2 — Utils (`src/utils.py`)
+## Fase 2 — Utils (`src/utils.py`) ✅
 
 **Task 2.1** — `OneEuroFilter`
 - Implementazione standard (parametri: `min_cutoff=1.0`, `beta=0.1`, `d_cutoff=1.0`)
@@ -118,7 +118,7 @@ class FramePose:
 
 ---
 
-## Fase 3 — Rep Detector (`src/rep_detector.py`)
+## Fase 3 — Rep Detector (`src/rep_detector.py`) ✅
 
 **Responsabilità**: data la lista di `FramePose`, identifica le ripetizioni.
 
@@ -144,7 +144,7 @@ class Rep:
 
 ---
 
-## Fase 4 — Depth Analyzer (`src/depth_analyzer.py`)
+## Fase 4 — Depth Analyzer (`src/depth_analyzer.py`) ✅
 
 **Responsabilità**: per ogni rep, al `frame_bottom`, giudica la profondità IPF.
 
@@ -187,7 +187,7 @@ class Verdict:
 
 ---
 
-## Fase 5 — Renderer (`src/renderer.py`)
+## Fase 5 — Renderer (`src/renderer.py`) ✅
 
 **Responsabilità**: riscrive il video con overlay grafico.
 
@@ -201,7 +201,7 @@ class Verdict:
 
 ---
 
-## Fase 6 — Entry Point (`main.py`)
+## Fase 6 — Entry Point (`main.py`) ✅
 
 ```python
 # python main.py video.mp4 [--side left|right]
@@ -228,15 +228,19 @@ REP 3: UNCERTAIN  (delta: +2.0 px)
 
 ---
 
-## Fase 7 — Calibrazione
+## Fase 7 — Calibrazione ⏳
 
 **Dopo aver girato l'MVP sui 4 video di test:**
 
-1. Guardare ogni bottom frame e confrontare il giudizio automatico con quello visivo
-2. Aggiustare `HIP_CREASE_ANTERIOR_RATIO` finché concordanza ≥ 90%
-3. Documentare il valore finale calibrato in `depth_analyzer.py`
+1. Guardare ogni bottom frame nel video di output e confrontare il giudizio automatico con quello visivo
+2. Se troppi falsi NO_LIFT → aumentare `HIP_CREASE_ANTERIOR_RATIO` (es. 0.25)
+3. Se troppi falsi GOOD_LIFT → diminuirlo (es. 0.15)
+4. Ripetere finché concordanza ≥ 90% su tutti e 4 i video
+5. Documentare il valore finale calibrato in `src/depth_analyzer.py`
 
 **Video di test**: `1_Milo.mp4`, `2_Mase.mp4`, `3_Cerve.mp4`, `4_Ivan.mp4`
+
+> ⏳ **TODO** — richiede run reale sui video + confronto visivo manuale
 
 ---
 
